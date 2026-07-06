@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Maima | Acompañamiento perinatal y parto respetado en Bucaramanga</title>
+<meta name="description" content="Maima: acompañamiento perinatal con enfoque humano en Bucaramanga. Embarazo, parto respetado, lactancia, yoga prenatal, talleres y mother blessing. Aquí tu maternidad es respetada." />
+<meta name="robots" content="noindex" /><!-- BORRADOR: quitar esta linea cuando el sitio se publique en su dominio -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Maima | Acompañamiento perinatal y parto respetado, Bucaramanga" />
+<meta property="og:description" content="Aquí tu maternidad es respetada. Embarazo, parto respetado, lactancia, yoga prenatal y talleres en Bucaramanga." />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Maima",
+  "alternateName": "Maima Atulado",
+  "description": "Acompañamiento perinatal con enfoque humano en Bucaramanga: embarazo, parto respetado, lactancia, yoga prenatal, talleres y mother blessing.",
+  "areaServed": "Bucaramanga, Santander, Colombia",
+  "sameAs": ["https://instagram.com/maima.atulado"],
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Bucaramanga",
+    "addressRegion": "Santander",
+    "addressCountry": "CO"
+  }
+}
+</script>
+<!-- PENDIENTE: favicon de Maima cuando llegue el logo (assets/favicon.png + apple-touch-icon.png) -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --teal-900:#5e1533;
+    --teal-700:#8e1f49;
+    --teal-500:#c06b84;
+    --teal-100:#f4cfc0;
+    --teal-50:#fbeee9;
+    --coral:#e4897c;
+    --coral-soft:#f7ddd3;
+    --sand:#fbf4ef;
+    --mustard:#f4b24e;
+    --bg:#fbf9f6;
+    --ink:#1f2a2e;
+    --muted:#5b6b6e;
+    --line:#e7e3dc;
+    --white:#ffffff;
+    --wa:#25d366;
+    --wa-dark:#1da851;
+    --shadow-sm:0 2px 10px rgba(12,59,58,.06);
+    --shadow:0 14px 40px rgba(12,59,58,.10);
+    --shadow-lg:0 26px 70px rgba(12,59,58,.16);
+    --radius:22px;
+    --radius-sm:14px;
+    --maxw:1140px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:'Inter',system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+    color:var(--ink);background:var(--bg);line-height:1.6;
+    -webkit-font-smoothing:antialiased;overflow-x:hidden;
+  }
+  h1,h2,h3,h4{font-family:'Fraunces','Georgia',serif;font-weight:600;line-height:1.12;letter-spacing:-.01em}
+  a{color:inherit;text-decoration:none}
+  img{max-width:100%;display:block}
+  section{padding:92px 0}
+  .wrap{width:100%;max-width:var(--maxw);margin:0 auto;padding:0 24px}
+  .eyebrow{font-family:'Inter';font-weight:600;font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;color:var(--teal-700)}
+  .lang-badge{display:inline-flex;align-items:center;gap:.55em;background:#fff;border:1.5px solid var(--coral);color:var(--teal-900);
+    font-weight:600;font-size:.92rem;padding:.5em 1.1em;border-radius:999px;box-shadow:var(--shadow-sm);margin-bottom:16px}
+  .lang-badge svg{width:1.15em;height:1.15em;color:var(--teal-700);flex:none}
+  .lead{font-size:1.075rem;color:var(--muted);max-width:60ch}
+  .center{text-align:center;margin-inline:auto}
+
+  /* Buttons */
+  .btn{display:inline-flex;align-items:center;gap:.55em;font-weight:600;font-size:1rem;
+    padding:.85em 1.5em;border-radius:999px;cursor:pointer;border:1.5px solid transparent;
+    transition:transform .15s ease,box-shadow .2s ease,background .2s ease;white-space:nowrap}
+  .btn:hover{transform:translateY(-2px)}
+  .btn svg{width:1.15em;height:1.15em;flex:none}
+  .btn-wa{background:var(--wa);color:#fff;box-shadow:0 8px 22px rgba(37,211,102,.32)}
+  .btn-wa:hover{background:var(--wa-dark)}
+  .btn-teal{background:var(--teal-700);color:#fff;box-shadow:0 8px 22px rgba(20,128,126,.28)}
+  .btn-teal:hover{background:var(--teal-900)}
+  .btn-ghost{background:transparent;color:var(--teal-900);border-color:var(--line)}
+  .btn-ghost:hover{border-color:var(--teal-500);background:var(--white)}
+
+  /* Header */
+  header{position:sticky;top:0;z-index:60;background:rgba(236,208,216,.96);
+    backdrop-filter:saturate(160%) blur(12px);border-bottom:1px solid transparent;transition:border-color .3s,box-shadow .3s}
+  header.scrolled{border-color:var(--line);box-shadow:var(--shadow-sm)}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:146px}
+  .brand{display:flex;align-items:center;gap:.7em}
+  .brand .mark{width:42px;height:42px;border-radius:50%;background:linear-gradient(135deg,var(--teal-500),var(--teal-900));
+    color:#fff;display:grid;place-items:center;font-family:'Fraunces';font-weight:600;font-size:1.15rem;flex:none;box-shadow:var(--shadow-sm)}
+  .brand b{font-family:'Fraunces';font-weight:600;font-size:1.12rem;letter-spacing:-.01em;line-height:1.05}
+  .brand span{display:block;font-family:'Inter';font-size:.72rem;font-weight:500;color:var(--muted);letter-spacing:.02em}
+  .brand-logo{height:140px;width:auto;display:block}
+  .foot-logo{background:#fff;padding:10px 16px;border-radius:14px;display:inline-block;box-shadow:0 8px 20px rgba(0,0,0,.14)}
+  .foot a.foot-logo{display:inline-flex;align-items:center;justify-content:space-between;gap:12px;width:329px;max-width:100%;padding:10px 18px}
+  .foot-logo .ft-label{color:var(--teal-900);font-weight:600;font-size:.92rem;white-space:nowrap}
+  .nav-links{display:flex;align-items:center;gap:30px}
+  .nav-links a.navlink{font-weight:500;font-size:.95rem;color:var(--ink);opacity:.85;transition:opacity .2s}
+  .nav-links a.navlink:hover{opacity:1;color:var(--teal-700)}
+  .nav-tools{display:flex;align-items:center;gap:14px}
+  .lang{display:inline-flex;border:1.5px solid var(--line);border-radius:999px;overflow:hidden;background:var(--white)}
+  .lang button{border:0;background:transparent;padding:.42em .8em;font-family:'Inter';font-weight:600;font-size:.82rem;cursor:pointer;color:var(--muted)}
+  .lang button.active{background:var(--teal-700);color:#fff}
+  .hamburger{display:none;border:1.5px solid var(--line);background:var(--white);border-radius:12px;width:46px;height:42px;cursor:pointer;align-items:center;justify-content:center}
+  .hamburger svg{width:22px;height:22px;color:var(--teal-900)}
+
+  /* Hero */
+  .hero{position:relative;padding:64px 0 76px;overflow:hidden}
+  .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:54px;align-items:center}
+  .hero h1{font-size:clamp(2.4rem,5vw,3.7rem);margin:.35em 0 .45em}
+  .hero h1 em{font-style:italic;color:var(--teal-700)}
+  .hero .lead{font-size:1.15rem;margin-bottom:1.7em}
+  .hero-cta{display:flex;flex-wrap:wrap;gap:14px;margin-bottom:1.8em}
+  .hero-meta{display:grid;grid-template-columns:repeat(2,auto);justify-content:start;gap:14px 36px;color:var(--muted);font-size:.92rem;font-weight:500}
+  .hero-meta div{display:flex;align-items:center;gap:.5em}
+  .hero-meta svg{width:1.1em;height:1.1em;color:var(--teal-500)}
+  .hero-art{position:relative}
+  .photo{position:relative;aspect-ratio:4/5;border-radius:30px;overflow:hidden;
+    background:linear-gradient(160deg,var(--teal-100),var(--coral-soft));box-shadow:var(--shadow-lg);
+    display:grid;place-items:center;text-align:center;border:6px solid #fff}
+  .photo .ph{color:var(--teal-900);opacity:.65;padding:24px}
+  .photo .ph svg{width:74px;height:74px;margin:0 auto 12px;opacity:.5}
+  .photo .ph small{font-size:.8rem;font-weight:500}
+  .badge-float{position:absolute;background:#fff;border-radius:18px;box-shadow:var(--shadow);padding:14px 18px;display:flex;align-items:center;gap:12px}
+  .badge-float .ic{width:42px;height:42px;border-radius:12px;display:grid;place-items:center;flex:none}
+  .badge-float b{display:block;font-family:'Fraunces';font-size:1.05rem;line-height:1}
+  .badge-float span{font-size:.78rem;color:var(--muted)}
+  .badge-1{bottom:26px;left:-46px}
+  .badge-1 .ic{background:var(--teal-100);color:var(--teal-700)}
+  .badge-2{top:30px;right:-42px}
+  .badge-2 .ic{background:var(--coral-soft);color:var(--coral)}
+  .blob{position:absolute;border-radius:50%;filter:blur(8px);opacity:.5;z-index:-1}
+  .blob.a{width:320px;height:320px;background:var(--teal-100);top:-90px;right:-80px}
+  .blob.b{width:260px;height:260px;background:var(--coral-soft);bottom:-90px;left:-90px}
+
+  /* Trust strip */
+  .trust{background:var(--teal-900);color:#fff;padding:30px 0}
+  .trust .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:22px 30px;align-items:start}
+  .trust .t{display:flex;align-items:flex-start;gap:13px;min-width:0}
+  .trust .t svg{width:26px;height:26px;color:var(--teal-500);flex:none;margin-top:5px}
+  .trust .t b{font-family:'Fraunces';font-size:1.45rem;display:block;line-height:1}
+  .trust .t span{font-size:.85rem;opacity:.78}
+
+  /* Section heading */
+  .shead{max-width:660px;margin-bottom:52px}
+  .shead.center{margin-inline:auto}
+  .shead h2{font-size:clamp(1.9rem,3.5vw,2.6rem);margin:.3em 0 .4em}
+
+  /* Services */
+  .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+  .card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:30px 26px;transition:transform .2s,box-shadow .2s,border-color .2s}
+  .card:hover{transform:translateY(-6px);box-shadow:var(--shadow);border-color:transparent}
+  .card .ic{width:56px;height:56px;border-radius:16px;background:var(--teal-50);color:var(--teal-700);display:grid;place-items:center;margin-bottom:18px}
+  .card .ic svg{width:28px;height:28px}
+  .card h3{font-size:1.22rem;margin-bottom:.4em}
+  .card p{color:var(--muted);font-size:.95rem}
+
+  /* About */
+  .about{background:linear-gradient(180deg,var(--sand),var(--bg))}
+  .about-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:54px;align-items:center}
+  .about-photo{aspect-ratio:1/1;border-radius:28px;background:linear-gradient(160deg,var(--coral-soft),var(--teal-100));
+    box-shadow:var(--shadow);display:grid;place-items:center;border:6px solid #fff;overflow:hidden}
+  .photo img{width:100%;height:100%;object-fit:cover;object-position:50% 4%}
+  .about-photo img{width:100%;height:100%;object-fit:cover;object-position:50% 22%}
+  .about-photo .ph{text-align:center;color:var(--teal-900);opacity:.6}
+  .about-photo .ph svg{width:64px;height:64px;opacity:.5;margin:0 auto 10px}
+  .about-photo .ph small{font-size:.8rem;font-weight:500}
+  .timeline{margin-top:26px;display:grid;gap:16px}
+  .timeline .row{display:flex;gap:15px;align-items:flex-start}
+  .timeline .dot{width:34px;height:34px;border-radius:10px;background:var(--teal-100);color:var(--teal-700);display:grid;place-items:center;flex:none}
+  .timeline .dot svg{width:18px;height:18px}
+  .timeline b{font-size:.98rem}
+  .timeline p{font-size:.9rem;color:var(--muted)}
+
+  /* Practice gallery */
+  .practice{background:linear-gradient(180deg,var(--bg),var(--sand))}
+  .gallery{display:grid;grid-template-columns:1fr 1fr;gap:26px}
+  .gallery figure{margin:0;position:relative;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);border:6px solid #fff;background:#fff}
+  .gallery img{width:100%;aspect-ratio:3/2;object-fit:cover;display:block}
+  .gallery figcaption{position:absolute;left:0;right:0;bottom:0;padding:30px 22px 16px;color:#fff;font-weight:600;font-size:1.02rem;
+    background:linear-gradient(transparent,rgba(12,59,58,.82))}
+
+  /* Approach */
+  .approach .cards{grid-template-columns:repeat(3,1fr)}
+  .approach .card{background:var(--teal-50);border-color:transparent}
+
+  /* Testimonials */
+  .quotes{background:var(--teal-900);color:#fff}
+  .quotes .shead h2{color:#fff}
+  .quotes .qgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+  .quote{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:var(--radius);padding:28px}
+  .quote .stars{color:#ffc861;letter-spacing:2px;margin-bottom:12px}
+  .quote p{font-size:.98rem;opacity:.92}
+  .quote .who{margin-top:16px;font-weight:600;font-size:.9rem}
+  .quote .who span{display:block;font-weight:400;opacity:.6;font-size:.82rem}
+  .note{font-size:.82rem;opacity:.6;margin-top:22px;text-align:center}
+  .rating{color:#fff;font-family:'Inter';font-weight:500;margin-top:14px;font-size:1.05rem;display:inline-flex;align-items:center;gap:8px}
+  .rating span:first-child{color:var(--mustard);letter-spacing:2px}
+  .rating b{font-weight:700}
+
+  /* FAQ */
+  .faq-list{max-width:760px;margin:0 auto;display:grid;gap:12px}
+  .faq-list details{background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px 20px}
+  .faq-list summary{cursor:pointer;font-weight:600;color:var(--ink);list-style:none;display:flex;justify-content:space-between;align-items:center;gap:10px}
+  .faq-list summary::-webkit-details-marker{display:none}
+  .faq-list summary::after{content:"+";color:var(--teal-700);font-size:1.35em;font-weight:700;transition:transform .2s;flex:none}
+  .faq-list details[open] summary::after{transform:rotate(45deg)}
+  .faq-list details p{margin-top:10px;color:var(--muted);font-size:.95rem}
+
+  /* Location / contact */
+  .loc-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:stretch}
+  .loc-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:34px}
+  .loc-card h3{font-size:1.5rem;margin-bottom:.6em}
+  .info{display:grid;gap:18px;margin:22px 0}
+  .info .row{display:flex;gap:14px;align-items:flex-start}
+  .info .ic{width:44px;height:44px;border-radius:12px;background:var(--teal-50);color:var(--teal-700);display:grid;place-items:center;flex:none}
+  .info .ic svg{width:21px;height:21px}
+  .info b{display:block;font-size:.98rem}
+  .info p,.info a{color:var(--muted);font-size:.93rem}
+  .info a:hover{color:var(--teal-700)}
+  .hours{background:var(--teal-50);border-radius:var(--radius-sm);padding:18px 20px;margin-top:8px}
+  .hours .h{display:flex;justify-content:space-between;font-size:.92rem;padding:4px 0}
+  .hours .h span:first-child{color:var(--muted)}
+  .hours .h b{font-weight:600}
+  .map{border-radius:var(--radius);overflow:hidden;min-height:340px;background:var(--teal-100);position:relative;box-shadow:var(--shadow-sm)}
+  .map iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+  .map-open{position:absolute;left:14px;bottom:14px;display:inline-flex;align-items:center;gap:.5em;background:#fff;color:var(--teal-900);
+    font-weight:600;font-size:.88rem;padding:.55em 1.1em;border-radius:999px;box-shadow:var(--shadow);z-index:2}
+  .map-open svg{width:1.1em;height:1.1em;color:var(--teal-700)}
+  .map-open:hover{background:var(--teal-50)}
+
+  /* CTA band */
+  .cta{background:linear-gradient(135deg,var(--teal-700),var(--teal-900));color:#fff;text-align:center}
+  .cta h2{font-size:clamp(1.9rem,3.6vw,2.7rem);color:#fff;margin-bottom:.4em}
+  .cta p{opacity:.9;max-width:54ch;margin:0 auto 1.6em}
+  .cta .hero-cta{justify-content:center}
+
+  /* Instagram */
+  .ig{text-align:center}
+  .ig .igrow{display:flex;justify-content:center;flex-wrap:wrap;gap:16px;margin-top:30px}
+  .ig-card{position:relative;display:block;width:160px;aspect-ratio:1/1;border-radius:18px;overflow:hidden;box-shadow:var(--shadow-sm);background:#fff;flex:none}
+  .ig-card img{width:100%;height:100%;object-fit:cover;transition:transform .35s}
+  .ig-card:hover img{transform:scale(1.05)}
+  .ig-badge{position:absolute;top:8px;right:8px;width:28px;height:28px;border-radius:50%;background:rgba(255,255,255,.92);display:grid;place-items:center;color:var(--teal-700);box-shadow:var(--shadow-sm)}
+  .ig-badge svg{width:15px;height:15px}
+
+  /* Footer */
+  footer{background:var(--teal-900);color:#fff;padding:56px 0 30px}
+  .foot{display:grid;grid-template-columns:2fr 1fr 1fr;gap:34px;padding-bottom:34px;border-bottom:1px solid rgba(255,255,255,.12)}
+  .foot p{opacity:.72;font-size:.92rem;margin-top:12px;max-width:40ch}
+  .foot h4{font-family:'Inter';font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;opacity:.6;margin-bottom:14px}
+  .foot a{display:block;opacity:.82;font-size:.93rem;padding:5px 0}
+  .foot a:hover{opacity:1}
+  .copy{padding-top:22px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:.83rem;opacity:.6}
+
+  /* Floating WhatsApp */
+  .fab{position:fixed;right:22px;bottom:22px;z-index:80;display:flex;align-items:center;gap:10px;background:var(--wa);color:#fff;
+    padding:14px 20px;border-radius:999px;box-shadow:0 12px 30px rgba(37,211,102,.42);font-weight:600;transition:transform .15s}
+  .fab:hover{transform:scale(1.05)}
+  .fab svg{width:26px;height:26px}
+  .fab .lbl{font-size:.95rem}
+
+  /* Mobile sticky bar */
+  .mbar{display:none;position:fixed;left:0;right:0;bottom:0;z-index:80;background:#fff;border-top:1px solid var(--line);
+    box-shadow:0 -6px 20px rgba(12,59,58,.08);padding:8px;grid-template-columns:repeat(3,1fr);gap:8px}
+  .mbar a{display:flex;flex-direction:column;align-items:center;gap:3px;padding:8px 4px;border-radius:12px;font-size:.72rem;font-weight:600;color:var(--teal-900)}
+  .mbar a.wa{background:var(--wa);color:#fff}
+  .mbar a svg{width:20px;height:20px}
+
+  /* Mobile menu panel */
+  .mobile-menu{display:none;position:fixed;inset:0;z-index:70;background:rgba(12,59,58,.4);backdrop-filter:blur(3px)}
+  .mobile-menu .panel{position:absolute;top:0;right:0;width:min(82vw,330px);height:100%;background:var(--bg);padding:26px;box-shadow:var(--shadow-lg);display:flex;flex-direction:column;gap:8px}
+  .mobile-menu a{padding:13px 6px;font-weight:600;font-size:1.05rem;border-bottom:1px solid var(--line)}
+  .mobile-menu .close{align-self:flex-end;border:0;background:transparent;font-size:1.6rem;cursor:pointer;color:var(--teal-900)}
+
+  @media(max-width:920px){
+    .hero-grid,.about-grid,.loc-grid{grid-template-columns:1fr}
+    .hero-art{order:-1;max-width:420px;margin:0 auto}
+    .cards,.approach .cards,.quotes .qgrid{grid-template-columns:1fr 1fr}
+    .foot{grid-template-columns:1fr 1fr}
+    .nav-links{display:none}
+    .hamburger{display:flex}
+    .badge-1{left:-10px}.badge-2{right:-6px}
+  }
+  @media(max-width:620px){
+    section{padding:64px 0}
+    .cards,.approach .cards,.quotes .qgrid,.foot,.gallery{grid-template-columns:1fr}
+    .trust .wrap{grid-template-columns:1fr 1fr;gap:18px}
+    .trust .t{width:auto}
+    .fab .lbl{display:none}
+    .fab{padding:16px;right:16px;bottom:74px}
+    .mbar{display:grid}
+    body{padding-bottom:70px}
+    .hero-meta{grid-template-columns:1fr;gap:12px}
+    .nav-tools .btn-wa{display:none}
+    .brand b{white-space:nowrap}
+    .nav{height:84px}
+    .brand-logo{height:76px}
+    .badge-1{display:none}
+    .badge-2{top:auto;bottom:16px;left:14px;right:auto}
+  }
+</style>
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header id="header">
+  <div class="wrap nav">
+    <a href="#top" class="brand">
+      <!-- INTERIM wordmark: replace with the real Maima logo file when Gregory adds it to assets/ -->
+      <span style="font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:2.1rem;color:var(--teal-700);line-height:1">maima<span style="display:block;font-family:'Inter';font-size:.7rem;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);margin-top:4px">a tu lado</span></span>
+    </a>
+    <nav class="nav-links">
+      <a class="navlink" href="#services" data-en="Services" data-es="Servicios">Services</a>
+      <a class="navlink" href="#about" data-en="About us" data-es="Nosotras">Nosotras</a>
+      <a class="navlink" href="#approach" data-en="Our approach" data-es="Nuestro enfoque">Nuestro enfoque</a>
+      <a class="navlink" href="#location" data-en="Contact" data-es="Contacto">Contacto</a>
+    </nav>
+    <div class="nav-tools">
+      <div class="lang" role="group" aria-label="Language">
+        <button id="lang-en" class="active" onclick="setLang('en')">EN</button>
+        <button id="lang-es" onclick="setLang('es')">ES</button>
+      </div>
+      <a class="btn btn-wa wa-link" href="#" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M.06 24l1.69-6.16a11.87 11.87 0 01-1.59-5.95C.16 5.34 5.5 0 12.06 0a11.82 11.82 0 018.41 3.49 11.82 11.82 0 013.48 8.41c0 6.56-5.34 11.9-11.9 11.9a11.9 11.9 0 01-5.69-1.45L.06 24zM6.6 20.13c1.68.99 3.28 1.59 5.45 1.59 5.45 0 9.89-4.43 9.89-9.88a9.85 9.85 0 00-2.9-7A9.82 9.82 0 0012.06 2c-5.46 0-9.9 4.43-9.9 9.88 0 2.27.67 3.97 1.78 5.75l-1 3.64 3.66-.96zm11.36-5.49c-.07-.12-.27-.2-.57-.35-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.64.07-.3-.15-1.26-.46-2.4-1.48-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51l-.57-.01c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.06 2.88 1.21 3.08.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.63.71.22 1.36.19 1.87.12.57-.09 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.41z"/></svg>
+        <span data-en="WhatsApp" data-es="WhatsApp">WhatsApp</span>
+      </a>
+      <button class="hamburger" aria-label="Menu" onclick="toggleMenu(true)">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- Mobile menu -->
+<div class="mobile-menu" id="mobileMenu" onclick="if(event.target===this)toggleMenu(false)">
+  <div class="panel">
+    <button class="close" onclick="toggleMenu(false)" aria-label="Close">&times;</button>
+    <a href="#services" onclick="toggleMenu(false)" data-en="Services" data-es="Servicios">Services</a>
+    <a href="#about" onclick="toggleMenu(false)" data-en="About us" data-es="Nosotras">Nosotras</a>
+    <a href="#approach" onclick="toggleMenu(false)" data-en="Our approach" data-es="Nuestro enfoque">Nuestro enfoque</a>
+    <a href="#location" onclick="toggleMenu(false)" data-en="Contact" data-es="Contacto">Contacto</a>
+    <a class="btn btn-wa wa-link" style="margin-top:14px;justify-content:center" href="#" target="_blank" rel="noopener" data-en="Reserve by WhatsApp" data-es="Reserva por WhatsApp">Reserva por WhatsApp</a>
+  </div>
+</div>
+
+<span id="top"></span>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="blob a"></div><div class="blob b"></div>
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <span class="eyebrow" data-en="Pregnancy · Respectful birth · Breastfeeding" data-es="Embarazo · Parto respetado · Lactancia">Embarazo · Parto respetado · Lactancia</span>
+      <h1 data-en="Here your motherhood is <em>respected</em>" data-es="Aquí tu maternidad es <em>respetada</em>">Aquí tu maternidad es <em>respetada</em></h1>
+      <p class="lead" data-en="Maima walks beside you through pregnancy, birth and breastfeeding with a human, respectful approach, so you live your motherhood informed, supported and never alone." data-es="En Maima te acompañamos durante el embarazo, el parto y la lactancia con un enfoque humano y respetuoso, para que vivas tu maternidad informada, acompañada y nunca sola.">En Maima te acompañamos durante el embarazo, el parto y la lactancia con un enfoque humano y respetuoso, para que vivas tu maternidad informada, acompañada y nunca sola.</p>
+      <div class="hero-cta">
+        <a class="btn btn-wa wa-link" href="#" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M.06 24l1.69-6.16a11.87 11.87 0 01-1.59-5.95C.16 5.34 5.5 0 12.06 0a11.82 11.82 0 018.41 3.49 11.82 11.82 0 013.48 8.41c0 6.56-5.34 11.9-11.9 11.9a11.9 11.9 0 01-5.69-1.45L.06 24zM6.6 20.13c1.68.99 3.28 1.59 5.45 1.59 5.45 0 9.89-4.43 9.89-9.88a9.85 9.85 0 00-2.9-7A9.82 9.82 0 0012.06 2c-5.46 0-9.9 4.43-9.9 9.88 0 2.27.67 3.97 1.78 5.75l-1 3.64 3.66-.96zm11.36-5.49c-.07-.12-.27-.2-.57-.35-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.64.07-.3-.15-1.26-.46-2.4-1.48-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51l-.57-.01c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.06 2.88 1.21 3.08.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.63.71.22 1.36.19 1.87.12.57-.09 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.41z"/></svg>
+          <span data-en="Book by WhatsApp" data-es="Agenda por WhatsApp">Book by WhatsApp</span>
+        </a>
+        <a class="btn btn-ghost" href="#services" data-en="View services" data-es="Ver servicios">View services</a>
+      </div>
+      <div class="hero-meta">
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg><span data-en="Human, respectful approach" data-es="Enfoque humano y respetuoso">Enfoque humano y respetuoso</span></div>
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-4.35-9.5-8.5C.5 9 2 5 5.5 5 7.5 5 9 6.2 12 9c3-2.8 4.5-4 6.5-4C22 5 23.5 9 21.5 12.5 19 16.65 12 21 12 21z"/></svg><span data-en="Workshops and prenatal yoga" data-es="Talleres y yoga prenatal">Talleres y yoga prenatal</span></div>
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg><span data-en="Bucaramanga, Colombia" data-es="Bucaramanga, Colombia">Bucaramanga, Colombia</span></div>
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg><span data-en="Book by WhatsApp" data-es="Reserva tu espacio por WhatsApp">Reserva tu espacio por WhatsApp</span></div>
+      </div>
+    </div>
+    <div class="hero-art">
+      <div class="photo">
+        <!-- INTERIM photo: replace with a real Maima photo when Gregory adds them to assets/ -->
+        <img src="assets/interim-team.jpg" alt="Acompañamiento perinatal Maima en Bucaramanga" />
+      </div>
+      <div class="badge-float badge-1">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg></div>
+        <div><b data-en="Respectful" data-es="Parto respetado">Respectful</b><span data-en="birth, your way" data-es="a tu manera">birth, your way</span></div>
+      </div>
+      <div class="badge-float badge-2">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 21s-7-4.35-9.5-8.5C.5 9 2 5 5.5 5 7.5 5 9 6.2 12 9c3-2.8 4.5-4 6.5-4C22 5 23.5 9 21.5 12.5 19 16.65 12 21 12 21z"/></svg></div>
+        <div><b data-en="With you" data-es="A tu lado">With you</b><span data-en="every step" data-es="en cada paso">every step</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TRUST STRIP ============ -->
+<div class="trust">
+  <div class="wrap">
+    <div class="t"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-4.35-9.5-8.5C.5 9 2 5 5.5 5 7.5 5 9 6.2 12 9c3-2.8 4.5-4 6.5-4C22 5 23.5 9 21.5 12.5 19 16.65 12 21 12 21z"/></svg><div><b data-en="Pregnancy" data-es="Embarazo">Pregnancy</b><span data-en="perinatal accompaniment" data-es="acompañamiento perinatal">perinatal accompaniment</span></div></div>
+    <div class="t"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><circle cx="9" cy="10" r="1"/><circle cx="15" cy="10" r="1"/></svg><div><b data-en="Birth" data-es="Parto">Birth</b><span data-en="respectful, informed, yours" data-es="respetado, informado, tuyo">respectful, informed, yours</span></div></div>
+    <div class="t"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a7 7 0 00-4 12.7V17a2 2 0 002 2h4a2 2 0 002-2v-2.3A7 7 0 0012 2z"/><path d="M9 21h6"/></svg><div><b data-en="Breastfeeding" data-es="Lactancia">Breastfeeding</b><span data-en="guidance and support" data-es="asesoría y apoyo">guidance and support</span></div></div>
+    <div class="t"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 00-4-4H6a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 00-3-3.87"/></svg><div><b data-en="Community" data-es="Comunidad">Community</b><span data-en="workshops, yoga, mothers" data-es="talleres, yoga, madres">workshops, yoga, mothers</span></div></div>
+  </div>
+</div>
+
+<!-- ============ SERVICES ============ -->
+<section id="services">
+  <div class="wrap">
+    <div class="shead center">
+      <span class="eyebrow" data-en="What we offer" data-es="Lo que ofrecemos">Lo que ofrecemos</span>
+      <h2 data-en="Accompaniment for every stage of motherhood" data-es="Acompañamiento en cada etapa de tu maternidad">Acompañamiento en cada etapa de tu maternidad</h2>
+      <p class="lead center" data-en="From pregnancy to birth and breastfeeding, with workshops and community that hold you along the way." data-es="Desde el embarazo hasta el parto y la lactancia, con talleres y una comunidad que te sostiene en el camino.">Desde el embarazo hasta el parto y la lactancia, con talleres y una comunidad que te sostiene en el camino.</p>
+    </div>
+    <div class="cards">
+      <div class="card">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M19 14c1.5-1.5 3-3.3 3-5.5A4.5 4.5 0 0012 6 4.5 4.5 0 002 8.5c0 2.2 1.5 4 3 5.5l7 7z"/></svg></div>
+        <h3 data-en="Pregnancy accompaniment" data-es="Acompañamiento en el embarazo">Acompañamiento en el embarazo</h3>
+        <p data-en="Walk your pregnancy informed and supported, with a human approach that puts you at the center." data-es="Vive tu embarazo informada y acompañada, con un enfoque humano que te pone a ti en el centro.">Vive tu embarazo informada y acompañada, con un enfoque humano que te pone a ti en el centro.</p>
+      </div>
+      <div class="card">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg></div>
+        <h3 data-en="Respectful birth" data-es="Parto respetado">Respectful birth</h3>
+        <p data-en="Your birth, your decisions: preparation and support so your birth is lived with information, respect and calm." data-es="Tu parto, tus decisiones: preparación y acompañamiento para que tu nacimiento se viva con información, respeto y calma.">Tu parto, tus decisiones: preparación y acompañamiento para que tu nacimiento se viva con información, respeto y calma.</p>
+      </div>
+      <div class="card">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 3v18M5 8l7-5 7 5"/><circle cx="12" cy="14" r="3"/></svg></div>
+        <h3 data-en="Breastfeeding support" data-es="Lactancia">Breastfeeding support</h3>
+        <p data-en="Guidance and hands-on support so breastfeeding works for you and your baby, at your rhythm." data-es="Asesoría y apoyo cercano para que la lactancia funcione para ti y tu bebé, a su ritmo.">Asesoría y apoyo cercano para que la lactancia funcione para ti y tu bebé, a su ritmo.</p>
+      </div>
+      <div class="card">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 21s-7-4.35-9.5-8.5C.5 9 2 5 5.5 5 7.5 5 9 6.2 12 9c3-2.8 4.5-4 6.5-4C22 5 23.5 9 21.5 12.5 19 16.65 12 21 12 21z"/></svg></div>
+        <h3 data-en="Prenatal yoga" data-es="Yoga prenatal">Prenatal yoga</h3>
+        <p data-en="Movement, breathing and connection with your baby, preparing body and mind for birth." data-es="Movimiento, respiración y conexión con tu bebé, preparando cuerpo y mente para el parto.">Movimiento, respiración y conexión con tu bebé, preparando cuerpo y mente para el parto.</p>
+      </div>
+      <div class="card">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg></div>
+        <h3 data-en="Workshops" data-es="Talleres">Workshops</h3>
+        <p data-en="Childbirth preparation, newborn care and more: practical spaces to learn and share with other families." data-es="Preparación para el parto, cuidados del recién nacido y más: espacios prácticos para aprender y compartir con otras familias.">Preparación para el parto, cuidados del recién nacido y más: espacios prácticos para aprender y compartir con otras familias.</p>
+      </div>
+      <div class="card">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+        <h3 data-en="Mother Blessing" data-es="Mother Blessing">Mother Blessing</h3>
+        <p data-en="A warm ceremony to celebrate and honor the mother before birth, surrounded by her circle." data-es="Una ceremonia cálida para celebrar y honrar a la madre antes del nacimiento, rodeada de su círculo.">Una ceremonia cálida para celebrar y honrar a la madre antes del nacimiento, rodeada de su círculo.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section id="about" class="about">
+  <div class="wrap about-grid">
+    <div class="about-photo">
+      <!-- INTERIM photo: replace with a real team photo when Gregory adds the Maima pictures -->
+      <img src="assets/interim-ultrasound.jpg" alt="Equipo Maima, acompañamiento perinatal en Bucaramanga" />
+    </div>
+    <div>
+      <span class="eyebrow" data-en="About us" data-es="Nosotras">Nosotras</span>
+      <h2 style="font-size:clamp(1.9rem,3.5vw,2.6rem);margin:.3em 0 .5em" data-en="The Maima team" data-es="El equipo de Maima">El equipo de Maima</h2>
+      <p class="lead" data-en="We are a team of women dedicated to walking beside you through pregnancy, birth and postpartum with evidence, warmth and respect. Our promise is simple: here your motherhood is respected, and you are never alone." data-es="Somos un equipo de mujeres dedicadas a acompañarte en el embarazo, el parto y el posparto con evidencia, calidez y respeto. Nuestra promesa es simple: aquí tu maternidad es respetada, y nunca estás sola.">Somos un equipo de mujeres dedicadas a acompañarte en el embarazo, el parto y el posparto con evidencia, calidez y respeto. Nuestra promesa es simple: aquí tu maternidad es respetada, y nunca estás sola.</p>
+      <div class="timeline">
+        <!-- POR CONFIRMAR: nombres y roles reales del equipo (Nosotras) -->
+        <div class="row"><div class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-4.35-9.5-8.5C.5 9 2 5 5.5 5 7.5 5 9 6.2 12 9c3-2.8 4.5-4 6.5-4C22 5 23.5 9 21.5 12.5 19 16.65 12 21 12 21z"/></svg></div><div><b data-en="Perinatal accompaniment with a human approach" data-es="Acompañamiento perinatal con enfoque humano">Acompañamiento perinatal con enfoque humano</b></div></div>
+        <div class="row"><div class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><circle cx="9" cy="10" r="1"/><circle cx="15" cy="10" r="1"/></svg></div><div><b data-en="Respectful birth, informed decisions" data-es="Parto respetado y decisiones informadas">Respectful birth, informed decisions</b></div></div>
+        <div class="row"><div class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a7 7 0 00-4 12.7V17a2 2 0 002 2h4a2 2 0 002-2v-2.3A7 7 0 0012 2z"/><path d="M9 21h6"/></svg></div><div><b data-en="Breastfeeding guidance and support" data-es="Asesoría y apoyo en lactancia">Breastfeeding guidance and support</b></div></div>
+        <div class="row"><div class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 00-4-4H6a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 00-3-3.87"/></svg></div><div><b data-en="A community of mothers: workshops, yoga, circles" data-es="Una comunidad de madres: talleres, yoga, círculos">A community of mothers: workshops, yoga, circles</b></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PRACTICE GALLERY ============ -->
+<section class="practice">
+  <div class="wrap">
+    <div class="shead center">
+      <span class="eyebrow" data-en="A closer look" data-es="Una mirada más cercana">Una mirada más cercana</span>
+      <h2 data-en="Motherhood, accompanied" data-es="Una maternidad acompañada">Una maternidad acompañada</h2>
+      <p class="lead center" data-en="Moments from our accompaniment, workshops and community." data-es="Momentos de nuestro acompañamiento, talleres y comunidad.">Momentos de nuestro acompañamiento, talleres y comunidad.</p>
+    </div>
+    <div class="gallery">
+      <!-- INTERIM photos: replace with real Maima photos (births, workshops, yoga) when Gregory adds them -->
+      <figure>
+        <img src="assets/interim-space.jpg" alt="Espacio de acompañamiento Maima" />
+        <figcaption data-en="A calm, welcoming space" data-es="Un espacio tranquilo y acogedor">Un espacio tranquilo y acogedor</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/interim-ultrasound.jpg" alt="Acompañamiento del embarazo" />
+        <figcaption data-en="Walking with you in pregnancy" data-es="Acompañándote en el embarazo">Acompañándote en el embarazo</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/interim-team.jpg" alt="Equipo Maima" />
+        <figcaption data-en="A team at your side" data-es="Un equipo a tu lado">Un equipo a tu lado</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ APPROACH ============ -->
+<section id="approach" class="approach">
+  <div class="wrap">
+    <div class="shead center">
+      <span class="eyebrow" data-en="Why mothers choose Maima" data-es="Por qué nos eligen las madres">Por qué nos eligen las madres</span>
+      <h2 data-en="Accompaniment that puts you first" data-es="Un acompañamiento que te pone primero">Un acompañamiento que te pone primero</h2>
+    </div>
+    <div class="cards">
+      <div class="card">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg></div>
+        <h3 data-en="We listen, first" data-es="Primero te escuchamos">We listen, first</h3>
+        <p data-en="Your story, your fears and your wishes come first. Every plan starts with you." data-es="Tu historia, tus miedos y tus deseos son lo primero. Cada plan comienza contigo.">Tu historia, tus miedos y tus deseos son lo primero. Cada plan comienza contigo.</p>
+      </div>
+      <div class="card">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 2a7 7 0 00-4 12.7V17a2 2 0 002 2h4a2 2 0 002-2v-2.3A7 7 0 0012 2z"/><path d="M9 21h6"/></svg></div>
+        <h3 data-en="Evidence with warmth" data-es="Evidencia con calidez">Evidence with warmth</h3>
+        <p data-en="Up-to-date, evidence-based guidance delivered with a human, judgment-free approach." data-es="Información actualizada y basada en evidencia, entregada con un enfoque humano y sin juicios.">Información actualizada y basada en evidencia, entregada con un enfoque humano y sin juicios.</p>
+      </div>
+      <div class="card">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M16 21v-2a4 4 0 00-4-4H6a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 00-3-3.87"/></svg></div>
+        <h3 data-en="Always close" data-es="Siempre cerca">Always close</h3>
+        <p data-en="Write to us on WhatsApp to ask anything or reserve your space, simple and personal." data-es="Escríbenos por WhatsApp para resolver cualquier duda o reservar tu espacio, simple y personal.">Escríbenos por WhatsApp para resolver cualquier duda o reservar tu espacio, simple y personal.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIALS ============ -->
+<section class="quotes">
+  <div class="wrap">
+    <div class="shead center">
+      <span class="eyebrow" style="color:var(--mustard)" data-en="Testimoms" data-es="Testimoms">Testimoms</span>
+      <h2 data-en="Mothers who walked with us" data-es="Madres que caminaron con nosotras">Madres que caminaron con nosotras</h2>
+    </div>
+    <div class="qgrid">
+      <!-- MUESTRAS: reemplazar con Testimoms reales del Instagram (con permiso de cada madre) -->
+      <div class="quote"><div class="stars">★★★★★</div><p data-en="“I felt accompanied and respected at every moment of my birth.”" data-es="“Me sentí acompañada y respetada en cada momento de mi parto.”">“Me sentí acompañada y respetada en cada momento de mi parto.”</p><div class="who" data-en="Sample, replace with a real Testimom" data-es="Ejemplo, reemplazar con un Testimom real">Ejemplo, reemplazar con un Testimom real</div></div>
+      <div class="quote"><div class="stars">★★★★★</div><p data-en="“Breastfeeding felt impossible until they sat with me, calm, patient and kind.”" data-es="“La lactancia parecía imposible hasta que se sentaron conmigo, con calma, paciencia y cariño.”">“La lactancia parecía imposible hasta que se sentaron conmigo, con calma, paciencia y cariño.”</p><div class="who" data-en="Sample, replace with a real Testimom" data-es="Ejemplo, reemplazar con un Testimom real">Ejemplo, reemplazar con un Testimom real</div></div>
+      <div class="quote"><div class="stars">★★★★★</div><p data-en="“The workshops and the circle of mothers made me feel I was never alone.”" data-es="“Los talleres y el círculo de madres me hicieron sentir que nunca estaba sola.”">“Los talleres y el círculo de madres me hicieron sentir que nunca estaba sola.”</p><div class="who" data-en="Sample, replace with a real Testimom" data-es="Ejemplo, reemplazar con un Testimom real">Ejemplo, reemplazar con un Testimom real</div></div>
+    </div>
+    <div style="text-align:center;margin-top:28px">
+      <a class="btn" style="background:transparent;color:#fff;border-color:rgba(255,255,255,.45)" href="https://instagram.com/maima.atulado" target="_blank" rel="noopener" data-en="Read real stories on Instagram" data-es="Lee historias reales en Instagram">Lee historias reales en Instagram</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ INSTAGRAM ============ -->
+<section class="ig">
+  <div class="wrap">
+    <span class="eyebrow" data-en="Follow along" data-es="Síguenos">Síguenos</span>
+    <h2 style="font-size:clamp(1.7rem,3vw,2.3rem);margin:.3em 0 .3em" data-en="Motherhood, birth and community on Instagram" data-es="Maternidad, parto y comunidad en Instagram">Maternidad, parto y comunidad en Instagram</h2>
+    <p class="lead center" data-en="Education, real birth stories and community for mothers." data-es="Educación, historias reales de nacimientos y comunidad para madres.">Educación, historias reales de nacimientos y comunidad para madres.</p>
+    <div class="igrow">
+      <!-- INTERIM card art: swap imgs for their real reel thumbnails later; links are their real reels -->
+      <a class="ig-card" href="https://www.instagram.com/maima.atulado/reel/DZXcYopxgqK/" target="_blank" rel="noopener" aria-label="Reel de Instagram de Maima"><img src="assets/interim-space.jpg" alt="Reel de Instagram de Maima" /><span class="ig-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></span></a>
+      <a class="ig-card" href="https://www.instagram.com/maima.atulado/reel/DY0es2ixAyf/" target="_blank" rel="noopener" aria-label="Reel de Instagram de Maima"><img src="assets/interim-ultrasound.jpg" alt="Reel de Instagram de Maima" /><span class="ig-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></span></a>
+      <a class="ig-card" href="https://www.instagram.com/maima.atulado/reel/DYViw8yxaH_/" target="_blank" rel="noopener" aria-label="Reel de Instagram de Maima"><img src="assets/interim-team.jpg" alt="Reel de Instagram de Maima" /><span class="ig-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></span></a>
+    </div>
+    <div style="margin-top:28px">
+      <a class="btn btn-teal" href="https://instagram.com/maima.atulado" target="_blank" rel="noopener" data-en="Follow @maima.atulado" data-es="Seguir @maima.atulado">Follow @maima.atulado</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA BAND ============ -->
+<section class="cta">
+  <div class="wrap">
+    <h2 data-en="Your motherhood deserves to be accompanied" data-es="Tu maternidad merece ser acompañada">Tu maternidad merece ser acompañada</h2>
+    <p data-en="Questions, doubts or ready to begin? Write to us on WhatsApp and reserve your space." data-es="¿Preguntas, dudas o lista para empezar? Escríbenos por WhatsApp y reserva tu espacio.">¿Preguntas, dudas o lista para empezar? Escríbenos por WhatsApp y reserva tu espacio.</p>
+    <div class="hero-cta">
+      <a class="btn btn-wa wa-link" href="#" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M.06 24l1.69-6.16a11.87 11.87 0 01-1.59-5.95C.16 5.34 5.5 0 12.06 0a11.82 11.82 0 018.41 3.49 11.82 11.82 0 013.48 8.41c0 6.56-5.34 11.9-11.9 11.9a11.9 11.9 0 01-5.69-1.45L.06 24zM6.6 20.13c1.68.99 3.28 1.59 5.45 1.59 5.45 0 9.89-4.43 9.89-9.88a9.85 9.85 0 00-2.9-7A9.82 9.82 0 0012.06 2c-5.46 0-9.9 4.43-9.9 9.88 0 2.27.67 3.97 1.78 5.75l-1 3.64 3.66-.96z"/></svg>
+        <span data-en="Reserve by WhatsApp" data-es="Reserva tu espacio por WhatsApp">Reserve by WhatsApp</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="faq" id="faq">
+  <div class="wrap">
+    <div class="shead center">
+      <span class="eyebrow" data-en="Common questions" data-es="Preguntas frecuentes">Preguntas frecuentes</span>
+      <h2 data-en="Quick answers" data-es="Respuestas rápidas">Respuestas rápidas</h2>
+    </div>
+    <div class="faq-list">
+      <details>
+        <summary data-en="How do I reserve my space?" data-es="¿Cómo reservo mi espacio?">¿Cómo reservo mi espacio?</summary>
+        <p data-en="Write to us on WhatsApp with any green button on this page and we will coordinate everything with you." data-es="Escríbenos por WhatsApp con cualquier botón verde de esta página y coordinamos todo contigo.">Escríbenos por WhatsApp con cualquier botón verde de esta página y coordinamos todo contigo.</p>
+      </details>
+      <details>
+        <summary data-en="What is a respectful birth?" data-es="¿Qué es el parto respetado?">¿Qué es el parto respetado?</summary>
+        <p data-en="A birth where your decisions, your rhythms and your wellbeing are respected: clear information, consent and continuous support for you and your baby." data-es="Un parto donde tus decisiones, tus tiempos y tu bienestar se respetan: información clara, consentimiento y acompañamiento continuo para ti y tu bebé.">Un parto donde tus decisiones, tus tiempos y tu bienestar se respetan: información clara, consentimiento y acompañamiento continuo para ti y tu bebé.</p>
+      </details>
+      <details>
+        <summary data-en="When can I start?" data-es="¿Desde qué momento puedo empezar?">¿Desde qué momento puedo empezar?</summary>
+        <p data-en="At any point in your pregnancy: the earlier we begin, the fuller the accompaniment. Write to us and we will define it together." data-es="En cualquier momento del embarazo: cuanto antes empecemos, más completo será el acompañamiento. Escríbenos y lo definimos juntas.">En cualquier momento del embarazo: cuanto antes empecemos, más completo será el acompañamiento. Escríbenos y lo definimos juntas.</p>
+      </details>
+      <details>
+        <summary data-en="Do you support breastfeeding after birth?" data-es="¿Acompañan la lactancia después del parto?">¿Acompañan la lactancia después del parto?</summary>
+        <p data-en="Yes. Breastfeeding guidance accompanies you before and after the birth, at your own rhythm." data-es="Sí. La asesoría de lactancia te acompaña antes y después del nacimiento, a tu ritmo.">Sí. La asesoría de lactancia te acompaña antes y después del nacimiento, a tu ritmo.</p>
+      </details>
+      <details>
+        <summary data-en="Can my partner join?" data-es="¿Puede acompañarme mi pareja?">¿Puede acompañarme mi pareja?</summary>
+        <p data-en="Of course. Your partner or companion is welcome in sessions and workshops." data-es="Claro que sí. Tu pareja o acompañante es bienvenida en las sesiones y los talleres.">Claro que sí. Tu pareja o acompañante es bienvenida en las sesiones y los talleres.</p>
+      </details>
+      <details>
+        <summary data-en="Where are you located?" data-es="¿Dónde están ubicadas?">¿Dónde están ubicadas?</summary>
+        <p data-en="In Bucaramanga. Write to us on WhatsApp and we will share the exact location and workshop schedule." data-es="En Bucaramanga. Escríbenos por WhatsApp y te compartimos la ubicación exacta y los horarios de los talleres.">En Bucaramanga. Escríbenos por WhatsApp y te compartimos la ubicación exacta y los horarios de los talleres.</p>
+      </details>
+    </div>
+  </div>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {"@type": "Question", "name": "¿Cómo reservo mi espacio en Maima?", "acceptedAnswer": {"@type": "Answer", "text": "Por WhatsApp: escribe y coordinamos todo contigo."}},
+      {"@type": "Question", "name": "¿Qué es el parto respetado?", "acceptedAnswer": {"@type": "Answer", "text": "Un parto donde tus decisiones, tus tiempos y tu bienestar se respetan: información clara, consentimiento y acompañamiento continuo."}},
+      {"@type": "Question", "name": "¿Desde qué momento puedo empezar el acompañamiento?", "acceptedAnswer": {"@type": "Answer", "text": "En cualquier momento del embarazo: cuanto antes, más completo el acompañamiento."}},
+      {"@type": "Question", "name": "¿Acompañan la lactancia después del parto?", "acceptedAnswer": {"@type": "Answer", "text": "Sí, la asesoría de lactancia acompaña antes y después del nacimiento."}},
+      {"@type": "Question", "name": "¿Dónde está Maima?", "acceptedAnswer": {"@type": "Answer", "text": "En Bucaramanga, Santander, Colombia. La ubicación exacta se comparte por WhatsApp."}}
+    ]
+  }
+  </script>
+</section>
+
+<!-- ============ LOCATION ============ -->
+<section id="location">
+  <div class="wrap">
+    <div class="shead center">
+      <span class="eyebrow" data-en="Find us" data-es="Encuéntranos">Encuéntranos</span>
+      <h2 data-en="Contact &amp; community" data-es="Contacto y comunidad">Contacto y comunidad</h2>
+    </div>
+    <div class="loc-grid">
+      <div class="loc-card">
+        <h3 data-en="Get in touch" data-es="Escríbenos">Escríbenos</h3>
+        <div class="info">
+          <div class="row"><div class="ic"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M.06 24l1.69-6.16a11.87 11.87 0 01-1.59-5.95C.16 5.34 5.5 0 12.06 0a11.82 11.82 0 018.41 3.49 11.82 11.82 0 013.48 8.41c0 6.56-5.34 11.9-11.9 11.9a11.9 11.9 0 01-5.69-1.45L.06 24z"/></svg></div><div><b>WhatsApp</b><a class="wa-plain" href="#" target="_blank" rel="noopener" data-en="Reserve your space" data-es="Reserva tu espacio">Reserva tu espacio</a></div></div>
+          <div class="row"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></div><div><b>Instagram</b><a href="https://instagram.com/maima.atulado" target="_blank" rel="noopener">@maima.atulado</a></div></div>
+          <div class="row"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div><div><b data-en="Location" data-es="Ubicación">Ubicación</b><p data-en="Bucaramanga, Colombia. Write to us for the exact address and directions." data-es="Bucaramanga, Colombia. Escríbenos y te compartimos la dirección exacta y cómo llegar.">Bucaramanga, Colombia. Escríbenos y te compartimos la dirección exacta y cómo llegar.</p></div></div>
+        </div>
+        <div class="hours">
+          <!-- POR CONFIRMAR: horarios reales de sesiones y talleres -->
+          <div class="h"><span data-en="Sessions and workshops" data-es="Sesiones y talleres">Sesiones y talleres</span><b data-en="schedule via WhatsApp" data-es="horarios por WhatsApp">horarios por WhatsApp</b></div>
+        </div>
+      </div>
+      <div class="map">
+        <!-- POR CONFIRMAR: cambiar la busqueda del mapa a la direccion exacta de Maima -->
+        <iframe src="https://www.google.com/maps?q=Bucaramanga,+Santander,+Colombia&hl=es&z=12&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen title="Mapa: Maima, Bucaramanga"></iframe>
+        <a class="map-open" href="https://instagram.com/maima.atulado" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+          <span data-en="Follow on Instagram" data-es="Síguenos en Instagram">Síguenos en Instagram</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <a href="#top" class="foot-logo" aria-label="Volver arriba"><span style="font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:1.5rem;color:var(--teal-700);line-height:1">maima</span><span class="ft-label" data-en="Back to top ↑" data-es="Volver arriba ↑">Volver arriba ↑</span></a>
+        <p data-en="Perinatal accompaniment with a human approach in Bucaramanga. Here your motherhood is respected." data-es="Acompañamiento perinatal con enfoque humano en Bucaramanga. Aquí tu maternidad es respetada.">Acompañamiento perinatal con enfoque humano en Bucaramanga. Aquí tu maternidad es respetada.</p>
+      </div>
+      <div>
+        <h4 data-en="Explore" data-es="Explorar">Explorar</h4>
+        <a href="#services" data-en="Services" data-es="Servicios">Servicios</a>
+        <a href="#about" data-en="About us" data-es="Nosotras">Nosotras</a>
+        <a href="#approach" data-en="Our approach" data-es="Nuestro enfoque">Nuestro enfoque</a>
+        <a href="#location" data-en="Contact" data-es="Contacto">Contacto</a>
+      </div>
+      <div>
+        <h4 data-en="Contact" data-es="Contacto">Contacto</h4>
+        <a class="wa-plain" href="#" target="_blank" rel="noopener">WhatsApp</a>
+        <a href="https://instagram.com/maima.atulado" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+    <div class="copy">
+      <span data-en="© 2026 Maima. All rights reserved." data-es="© 2026 Maima. Todos los derechos reservados.">© 2026 Maima. Todos los derechos reservados.</span>
+      <span>Bucaramanga · Santander, Colombia</span>
+    </div>
+  </div>
+</footer>
+
+<!-- Floating WhatsApp -->
+<a class="fab wa-link" href="#" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M.06 24l1.69-6.16a11.87 11.87 0 01-1.59-5.95C.16 5.34 5.5 0 12.06 0a11.82 11.82 0 018.41 3.49 11.82 11.82 0 013.48 8.41c0 6.56-5.34 11.9-11.9 11.9a11.9 11.9 0 01-5.69-1.45L.06 24zM6.6 20.13c1.68.99 3.28 1.59 5.45 1.59 5.45 0 9.89-4.43 9.89-9.88a9.85 9.85 0 00-2.9-7A9.82 9.82 0 0012.06 2c-5.46 0-9.9 4.43-9.9 9.88 0 2.27.67 3.97 1.78 5.75l-1 3.64 3.66-.96zm11.36-5.49c-.07-.12-.27-.2-.57-.35-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.64.07-.3-.15-1.26-.46-2.4-1.48-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51l-.57-.01c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.06 2.88 1.21 3.08.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.63.71.22 1.36.19 1.87.12.57-.09 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.41z"/></svg>
+  <span class="lbl" data-en="Chat" data-es="Escríbeme">Chat</span>
+</a>
+
+<!-- Mobile sticky action bar -->
+<div class="mbar">
+  <a class="wa wa-link" href="#" target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M.06 24l1.69-6.16a11.87 11.87 0 01-1.59-5.95C.16 5.34 5.5 0 12.06 0a11.82 11.82 0 018.41 3.49 11.82 11.82 0 013.48 8.41c0 6.56-5.34 11.9-11.9 11.9a11.9 11.9 0 01-5.69-1.45L.06 24z"/></svg>
+    <span data-en="WhatsApp" data-es="WhatsApp">WhatsApp</span>
+  </a>
+  <a href="https://instagram.com/maima.atulado" target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+    <span>Instagram</span>
+  </a>
+  <a href="#services">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-4.35-9.5-8.5C.5 9 2 5 5.5 5 7.5 5 9 6.2 12 9c3-2.8 4.5-4 6.5-4C22 5 23.5 9 21.5 12.5 19 16.65 12 21 12 21z"/></svg>
+    <span data-en="Services" data-es="Servicios">Servicios</span>
+  </a>
+</div>
+
+<script>
+  // ---- WhatsApp links (one place to change the number) ----
+  // Enlace fijo de WhatsApp Business de Maima (ver refreshWa abajo)
+  function refreshWa(lang){
+    var url = "https://wa.me/message/T4RQ2SQ2KJ3SD1"; // enlace oficial de WhatsApp Business de Maima
+    document.querySelectorAll(".wa-link").forEach(function(a){ a.href = url; });
+    document.querySelectorAll(".wa-plain").forEach(function(a){ a.href = url; });
+  }
+
+  // ---- Language toggle ----
+  var currentLang = "en";
+  function setLang(lang){
+    currentLang = lang;
+    document.documentElement.lang = lang;
+    document.querySelectorAll("[data-en]").forEach(function(el){
+      var val = el.getAttribute("data-" + lang);
+      if(val !== null) el.innerHTML = val;
+    });
+    document.getElementById("lang-en").classList.toggle("active", lang === "en");
+    document.getElementById("lang-es").classList.toggle("active", lang === "es");
+    document.title = (lang === "es")
+      ? "Maima | Acompañamiento perinatal y parto respetado en Bucaramanga"
+      : "Maima | Perinatal accompaniment and respectful birth in Bucaramanga";
+    refreshWa(lang);
+    fitFootPill();
+  }
+
+  // ---- Footer pill: end exactly where the tagline's first line ends ----
+  function fitFootPill(){
+    var p = document.querySelector(".foot p");
+    var pill = document.querySelector(".foot-logo");
+    if(!p || !pill) return;
+    var r = document.createRange();
+    r.selectNodeContents(p);
+    var rects = r.getClientRects();
+    if(rects.length) pill.style.width = Math.round(rects[0].width) + "px";
+  }
+  window.addEventListener("load", fitFootPill);
+  window.addEventListener("resize", fitFootPill);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(fitFootPill);
+
+  // ---- Mobile menu ----
+  function toggleMenu(open){
+    document.getElementById("mobileMenu").style.display = open ? "block" : "none";
+  }
+
+  // ---- Header shadow on scroll ----
+  window.addEventListener("scroll", function(){
+    document.getElementById("header").classList.toggle("scrolled", window.scrollY > 10);
+  });
+
+  // init, default to Spanish (patient-facing language); the EN toggle is always available
+  setLang("es");
+
+  // Always start at the top on refresh: disable the browser's scroll restore, drop any
+  // #section anchor left in the URL, and out-wait Chrome's late anchor re-scroll at load.
+  if ("scrollRestoration" in history) history.scrollRestoration = "manual";
+  if (location.hash) history.replaceState(null, "", location.pathname + location.search);
+  function _toTop(){
+    document.documentElement.style.scrollBehavior = "auto";
+    window.scrollTo(0, 0);
+    setTimeout(function(){ document.documentElement.style.scrollBehavior = ""; }, 60);
+  }
+  _toTop();
+  window.addEventListener("load", function(){ _toTop(); setTimeout(_toTop, 250); setTimeout(_toTop, 600); });
+
+</script>
+</body>
+</html>
